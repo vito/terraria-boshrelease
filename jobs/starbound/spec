@@ -1,0 +1,21 @@
+---
+name: starbound
+
+templates:
+  starbound_ctl.sh: bin/starbound_ctl
+  sbinit.config.json: config/sbinit.config
+  starbound_server.config.erb: config/starbound_server.config
+  pre-start.erb: bin/pre-start
+
+packages:
+- pid_utils
+- starbound
+
+properties:
+  server_config:
+    description: |
+      Starbound server configuration.
+
+      If not set, the server will generate an initial one. After doing so, if
+      you want to change a setting you should go to /var/vcap/store/starbound,
+      copy it out, and then set this property with the values changed.

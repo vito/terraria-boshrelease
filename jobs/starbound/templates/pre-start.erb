@@ -1,0 +1,8 @@
+#!/bin/bash
+
+mkdir -p /var/vcap/store/starbound
+
+<% if_p("server_config") do %>
+cp /var/vcap/jobs/starbound/config/starbound_server.config \
+  /var/vcap/store/starbound/
+<% end %>

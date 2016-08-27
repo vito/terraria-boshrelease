@@ -1,0 +1,8 @@
+{
+  "assetDirectories" : [
+    "/var/vcap/packages/starbound/assets/",
+    "/var/vcap/packages/starbound/mods/"
+  ],
+
+  "storageDirectory" : "/var/vcap/store/starbound"
+}

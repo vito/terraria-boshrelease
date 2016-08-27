@@ -1,0 +1,3 @@
+set -e
+
+cp -a Starbound/* ${BOSH_INSTALL_TARGET}
