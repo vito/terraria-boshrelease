@@ -1,5 +1,5 @@
-# symlinked to ~/.steam/steamapps/common/Starbound
-src/Starbound
+# symlinked to ~/.steam/steamapps/common/Terraria
+src/Terraria
 
 config/dev.yml
 config/private.yml

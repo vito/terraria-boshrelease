@@ -1,9 +1,0 @@
----
-name: starbound
-
-dependencies: []
-
-files:
-- Starbound/assets/**/*
-- Starbound/mods/**/*
-- Starbound/linux/**/*

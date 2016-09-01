@@ -1,0 +1,5 @@
+check process terraria
+  with pidfile /var/vcap/sys/run/terraria/terraria.pid
+  start program "/var/vcap/jobs/terraria/bin/terraria_ctl start"
+  stop program "/var/vcap/jobs/terraria/bin/terraria_ctl stop"
+  group vcap

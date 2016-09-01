@@ -1,5 +1,0 @@
-check process starbound
-  with pidfile /var/vcap/sys/run/starbound/starbound.pid
-  start program "/var/vcap/jobs/starbound/bin/starbound_ctl start"
-  stop program "/var/vcap/jobs/starbound/bin/starbound_ctl stop"
-  group vcap

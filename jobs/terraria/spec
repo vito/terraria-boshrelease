@@ -1,0 +1,43 @@
+---
+name: terraria
+
+templates:
+  pre-start: bin/pre-start
+  terraria_ctl.sh: bin/terraria_ctl
+  serverconfig.txt.erb: config/serverconfig.txt
+
+packages:
+- pid_utils
+- terraria
+
+properties:
+  max_players:
+    default: 255
+    description: |
+      Maximum number of players allowed on the server.
+
+      Must be between 1 and 255.
+
+  world_size:
+    default: 3
+    description: |
+      Size of the world to generate.
+
+      1 = small, 2 = medium, 3 = large
+
+  difficulty:
+    default: 0
+    description: |
+      Difficulty of the game mode.
+
+      0 = normal, 1 = expert
+
+  bind_port:
+    default: 7777
+    description: |
+      Port on which the server will listen.
+
+  password:
+    default: ""
+    description: |
+      Server password. Can be empty.

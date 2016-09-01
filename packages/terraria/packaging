@@ -1,0 +1,3 @@
+set -e
+
+cp -a Terraria/* ${BOSH_INSTALL_TARGET}
